@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Дублёр</title>
+<meta name="description" content="Дублёр: резервная IT-инфраструктура в вашем офисе за 14 дней. Сайт, 1С и CRM работают, даже когда облако недоступно. Выезд в течение 24 часов, фиксированная цена, оплата частями.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="#top" aria-label="Дублёр, на главную">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="7" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="3"/><rect x="11" y="3" width="18" height="18" rx="2" fill="var(--signal)" stroke="currentColor" stroke-width="3"/></svg>
+      <span data-fill="brand">Дублёр</span>
+    </a>
+    <div class="top__right">
+      <a class="top__phone" href="tel:+70000000000" data-fill="phone">+7 (000) 000-00-00</a>
+      <a class="btn btn--signal btn--sm" href="#zayavka">Вызвать специалиста</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__text">
+        <h1>Сайт, 1С и CRM работают из вашего офиса, даже когда облако недоступно. За 14 дней.</h1>
+        <p class="lead">Дублёр разворачивает резервную IT-инфраструктуру у вас в офисе на оборудовании, которое остаётся вашей собственностью. Сайт открывается через внешний прокси-сервер, копия данных каждую ночь уходит в другой город. Если облачный провайдер снова откажет, работа продолжится.</p>
+        <div class="hero__cta">
+          <a class="btn btn--signal" href="#zayavka">Вызвать специалиста на аудит</a>
+          <a class="btn btn--ghost" href="#ceny">Рассчитать стоимость</a>
+        </div>
+        <p class="deadline"><span class="deadline__mark" aria-hidden="true"></span>Условия действуют для договоров, подписанных до <b data-fill="deadline-text">27 октября</b>. <span id="countdown">Осталось 14 дней.</span></p>
+      </div>
+      <ul class="facts" aria-label="Коротко об условиях">
+        <li><b>24 часа</b><span>от подписания договора до выезда специалиста</span></li>
+        <li><b>5 дней</b><span>до запуска самой важной системы<sup>*</sup></span></li>
+        <li><b>14 дней</b><span>полная сдача<sup>*</sup>, скидка 2% за каждый день просрочки по нашей вине</span></li>
+        <li><b>Частями</b><span>оплата по этапам без переплаты</span></li>
+      </ul>
+    </div>
+    <p class="wrap footnote"><sup>*</sup> Сроки считаются с даты, когда выполнены три условия: оплачен первый этап, предоставлены доступы, закуплено оборудование.</p>
+  </section>
+
+  <section class="scheme-sec" id="skhema" aria-labelledby="skhema-h">
+    <div class="wrap">
+      <h2 id="skhema-h">Как это выглядит</h2>
+      <div class="switch" role="tablist" aria-label="Сравнение">
+        <button role="tab" id="tab-before" aria-selected="false" aria-controls="panel-before" data-tab="before">Сейчас</button>
+        <button role="tab" id="tab-after" aria-selected="true" aria-controls="panel-after" data-tab="after">С Дублёром</button>
+      </div>
+      <div class="scheme-grid">
+        <figure class="panel panel--before" id="panel-before" role="tabpanel" aria-labelledby="tab-before">
+          <figcaption><b>Сейчас.</b> Всё в чужом дата-центре. Он недоступен — компания стоит.</figcaption>
+          <svg class="scheme scheme--before" viewBox="0 0 560 420" role="img" aria-label="Сейчас: сайт, 1С и CRM работают в облачном дата-центре. Он недоступен — клиенты не могут открыть сайт, офис не может работать." xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="gridB" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="var(--grid)" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="560" height="420" fill="url(#gridB)"/>
+
+  <!-- клиенты -->
+  <g transform="translate(280 62)">
+    <circle cx="-26" cy="-6" r="9" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M-42 20c2-12 9-17 16-17s14 5 16 17" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <circle cx="0" cy="-10" r="11" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M-20 22c2-15 11-21 20-21s18 6 20 21" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <circle cx="26" cy="-6" r="9" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M10 20c2-12 9-17 16-17s14 5 16 17" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <text x="0" y="48" text-anchor="middle" class="s-label">Ваши клиенты</text>
+  </g>
+
+  <!-- обрыв клиенты → облако -->
+  <path d="M280 125 V150" stroke="var(--fault)" stroke-width="3" stroke-dasharray="6 6"/>
+  <path d="M268 156 l24 -10 M268 166 l24 -10" stroke="var(--fault)" stroke-width="3"/>
+
+  <!-- облако -->
+  <g transform="translate(280 215)">
+    <path d="M-92 32c-26 0-40-18-36-38 4-19 22-29 40-25 6-26 30-41 56-37 22 3 37 18 41 37 20-5 42 8 44 30 3 21-13 33-32 33z" fill="var(--paper)" stroke="var(--fault)" stroke-width="3"/>
+    <text x="-6" y="2" text-anchor="middle" class="s-label">Облачный</text>
+    <text x="-6" y="22" text-anchor="middle" class="s-label">дата-центр</text>
+    <g transform="translate(92 -34)">
+      <circle r="18" fill="var(--fault)"/>
+      <path d="M-7 -7l14 14M7 -7l-14 14" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="280" y="276" text-anchor="middle" class="s-note s-note--fault">сейчас недоступен</text>
+
+  <!-- обрыв офис → облако -->
+  <path d="M280 288 V312" stroke="var(--fault)" stroke-width="3" stroke-dasharray="6 6"/>
+  <path d="M268 318 l24 -10 M268 328 l24 -10" stroke="var(--fault)" stroke-width="3"/>
+
+  <!-- офис -->
+  <g transform="translate(180 336)">
+    <rect width="200" height="64" rx="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <rect x="18" y="16" width="32" height="22" rx="2" fill="none" stroke="var(--muted)" stroke-width="2"/>
+    <path d="M28 44h12" stroke="var(--muted)" stroke-width="2"/>
+    <rect x="150" y="16" width="32" height="22" rx="2" fill="none" stroke="var(--muted)" stroke-width="2"/>
+    <path d="M160 44h12" stroke="var(--muted)" stroke-width="2"/>
+    <text x="100" y="38" text-anchor="middle" class="s-label">Ваш офис</text>
+    <text x="100" y="56" text-anchor="middle" class="s-note">работа стоит</text>
+  </g>
+</svg>
+        </figure>
+        <figure class="panel panel--after is-active" id="panel-after" role="tabpanel" aria-labelledby="tab-after">
+          <figcaption><b>С Дублёром.</b> Всё у вас в офисе, снаружи — прокси-сервер, копия — в другом городе.</figcaption>
+          <svg class="scheme scheme--after" viewBox="0 0 560 420" role="img" aria-label="Через 14 дней: сайт, 1С и CRM работают на компьютерах в вашем офисе с бесперебойным питанием и двумя каналами связи. Снаружи сайт открывается через прокси-сервер, IP офиса скрыт. Каждую ночь копия данных уходит в другой город." xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="gridA" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="var(--grid)" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="560" height="420" fill="url(#gridA)"/>
+
+  <!-- рабочий путь: клиенты ↔ прокси ↔ офис -->
+  <path class="flow" d="M200 116 V150"/>
+  <path class="flow" d="M184 222 L140 262"/>
+  <path class="flow" d="M216 222 L260 262"/>
+
+  <!-- клиенты -->
+  <g transform="translate(200 50)">
+    <circle cx="-26" cy="-6" r="9" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M-42 20c2-12 9-17 16-17s14 5 16 17" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <circle cx="0" cy="-10" r="11" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M-20 22c2-15 11-21 20-21s18 6 20 21" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <circle cx="26" cy="-6" r="9" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M10 20c2-12 9-17 16-17s14 5 16 17" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+    <text x="0" y="46" text-anchor="middle" class="s-label">Клиенты и сотрудники</text>
+    <g transform="translate(52 -12)">
+      <circle r="13" fill="var(--ok)"/>
+      <path d="M-6 0l4 4 8-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- защитный прокси -->
+  <g transform="translate(200 186)">
+    <path d="M0 -34 L30 -24 V2 C30 20 16 30 0 36 C-16 30 -30 20 -30 2 V-24 Z" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <path d="M-10 0l7 7 13-14" fill="none" stroke="var(--ok)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="-44" y="-4" text-anchor="end" class="s-label">Прокси-сервер</text>
+    <text x="-44" y="16" text-anchor="end" class="s-note">IP офиса скрыт</text>
+  </g>
+
+  <text x="150" y="246" text-anchor="end" class="s-note">канал 1</text>
+  <text x="250" y="246" class="s-note">канал 2</text>
+
+  <!-- копия в другом городе -->
+  <path d="M470 262 V194" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="3 6" stroke-linecap="round"/>
+  <text x="460" y="234" text-anchor="end" class="s-note">каждую ночь</text>
+  <g transform="translate(400 124)">
+    <rect width="140" height="70" rx="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"/>
+    <ellipse cx="28" cy="22" rx="14" ry="5" fill="none" stroke="var(--ink)" stroke-width="2"/>
+    <path d="M14 22v22c0 3 6 5 14 5s14-2 14-5V22" fill="none" stroke="var(--ink)" stroke-width="2"/>
+    <text x="56" y="30" class="s-label s-label--sm">Копия</text>
+    <text x="56" y="48" class="s-label s-label--sm">в другом</text>
+    <text x="56" y="64" class="s-label s-label--sm">городе</text>
+  </g>
+
+  <!-- офис -->
+  <g transform="translate(30 262)">
+    <rect width="500" height="146" rx="4" fill="var(--paper)" stroke="var(--ok)" stroke-width="3"/>
+    <text x="18" y="28" class="s-label">Ваш офис</text>
+
+    <!-- 3 компьютера-сервера -->
+    <g transform="translate(28 44)">
+      <g><rect width="34" height="62" rx="3" fill="none" stroke="var(--ink)" stroke-width="2.5"/><path d="M8 12h18M8 20h18" stroke="var(--ink)" stroke-width="2"/><circle cx="17" cy="48" r="3" fill="var(--ok)"/></g>
+      <g transform="translate(44 0)"><rect width="34" height="62" rx="3" fill="none" stroke="var(--ink)" stroke-width="2.5"/><path d="M8 12h18M8 20h18" stroke="var(--ink)" stroke-width="2"/><circle cx="17" cy="48" r="3" fill="var(--ok)"/></g>
+      <g transform="translate(88 0)"><rect width="34" height="62" rx="3" fill="none" stroke="var(--ink)" stroke-width="2.5"/><path d="M8 12h18M8 20h18" stroke="var(--ink)" stroke-width="2"/><circle cx="17" cy="48" r="3" fill="var(--ok)"/></g>
+      <text x="61" y="86" text-anchor="middle" class="s-note">2–5 серверов</text>
+    </g>
+
+    <!-- ИБП -->
+    <g transform="translate(216 52)">
+      <rect width="62" height="54" rx="3" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <path d="M34 10 L22 30 H32 L27 46 L42 24 H32 Z" fill="var(--signal)"/>
+      <text x="31" y="78" text-anchor="middle" class="s-note">ИБП</text>
+    </g>
+
+    <!-- роутер -->
+    <g transform="translate(316 66)">
+      <rect width="96" height="30" rx="4" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <path d="M22 0 L14 -20 M74 0 L82 -20" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="20" cy="15" r="3" fill="var(--ok)"/><circle cx="32" cy="15" r="3" fill="var(--ok)"/>
+      <text x="48" y="54" text-anchor="middle" class="s-note">роутер, 2 провайдера</text>
+    </g>
+  </g>
+</svg>
+        </figure>
+      </div>
+      <ul class="pillars">
+        <li><b>Своё оборудование</b>2–5 компьютеров-серверов и ИБП в вашем офисе. Вы владеете ими, а не арендуете.</li>
+        <li><b>Два канала связи</b>Отказ одного провайдера не останавливает работу. IP-адрес офиса снаружи не виден.</li>
+        <li><b>Копия каждую ночь</b>Данные хранятся ещё и в другом городе. Восстановление проверяем при сдаче.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <h2 id="plan-h">14 дней от договора до результата</h2>
+      <div class="ruler" aria-hidden="true">
+        <span style="--d:1">1</span><span style="--d:2">2</span><span style="--d:3">3</span><span style="--d:5">5</span><span style="--d:14">14</span>
+      </div>
+      <ol class="steps">
+        <li style="--from:1;--to:1"><span class="steps__day">День 1</span><b>Договор</b><p>Подписываем в день обращения, можно электронно. Вы оплачиваете выезд и аудит.</p></li>
+        <li style="--from:1;--to:2"><span class="steps__day">День 1–2</span><b>Выезд и аудит</b><p>Специалист в офисе. К вечеру — письменное заключение: что потеряно, что можно вернуть, смета и список оборудования.</p></li>
+        <li style="--from:2;--to:3"><span class="steps__day">День 2–3</span><b>Закупка и связь</b><p>Вы покупаете оборудование напрямую у продавца по нашему списку, мы сопровождаем закупку. Вы заключаете договоры с двумя провайдерами связи.</p></li>
+        <li style="--from:3;--to:5"><span class="steps__day">До 5-го дня</span><b>Главное работает</b><p>Сайт, учёт или CRM — то, без чего бизнес стоит, — запускаем первым.</p></li>
+        <li style="--from:5;--to:14"><span class="steps__day">До 14-го дня</span><b>Всё остальное</b><p>Восстановление данных из всех доступных копий, перенос систем, настройка резервного копирования и удалённого доступа сотрудников.</p></li>
+        <li style="--from:14;--to:14"><span class="steps__day">День 14</span><b>Приёмка</b><p>При вас отключаем питание и интернет и проверяем, что всё поднимается само. Подписываем акт, передаём пароли и регламент эксплуатации.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="prices" id="ceny" aria-labelledby="ceny-h">
+    <div class="wrap">
+      <h2 id="ceny-h">Расчёт стоимости</h2>
+      <p class="sub">Выберите пакет, сопровождение и способ оплаты — расчёт обновится сразу. Цена работ фиксируется в смете после аудита и дальше не меняется. <span data-vat-note>Цены указаны с НДС.</span></p>
+
+      <fieldset class="pkgs">
+        <legend class="sr">Пакет</legend>
+        <label class="pkg">
+          <input type="radio" name="pkg" id="pkg-start" value="start">
+          <span class="pkg__name">Старт</span>
+          <span class="pkg__who">Сайт и 1–2 системы, до 30 сотрудников</span>
+          <span class="pkg__price" data-money="160000">160 000 ₽</span>
+          <span class="pkg__vat" data-vat-of="160000"></span>
+          <span class="pkg__meta">2 компьютера-сервера, ИБП, роутер</span>
+        </label>
+        <label class="pkg">
+          <input type="radio" name="pkg" id="pkg-biz" value="biz" checked>
+          <span class="pkg__name">Бизнес</span>
+          <span class="pkg__who">Сайт, 1С/CRM, файлы, почта; 30–150 сотрудников</span>
+          <span class="pkg__price" data-money="320000">320 000 ₽</span>
+          <span class="pkg__vat" data-vat-of="320000"></span>
+          <span class="pkg__meta">3 компьютера-сервера, ИБП, сеть, запасные диски</span>
+        </label>
+        <label class="pkg">
+          <input type="radio" name="pkg" id="pkg-res" value="res">
+          <span class="pkg__name">Резерв+</span>
+          <span class="pkg__who">Несколько сайтов и баз данных, полный резерв</span>
+          <span class="pkg__price" data-money="560000">560 000 ₽</span>
+          <span class="pkg__vat" data-vat-of="560000"></span>
+          <span class="pkg__meta">5 компьютеров-серверов, 2 ИБП, сеть, запасные диски</span>
+        </label>
+      </fieldset>
+
+      <div class="calc">
+        <div class="calc__controls">
+          <fieldset class="seg" id="support-seg">
+            <legend>Сопровождение после сдачи</legend>
+            <label><input type="radio" name="support" id="sup-on" value="on" checked><span>С сопровождением <small id="sup-price">47 250 ₽/мес</small></span></label>
+            <label><input type="radio" name="support" id="sup-off" value="off"><span>Отказаться от сопровождения <small>0 ₽/мес</small></span></label>
+          </fieldset>
+
+          <div class="optout" id="optout-note" hidden>
+            <p><b>Без сопровождения система продолжит работать.</b> По акту к вам переходят:</p>
+            <ul>
+              <li>наблюдение за серверами и реакция на сбои;</li>
+              <li>проверка ночных копий и оплата хранилища в другом городе;</li>
+              <li>обновления, пароли, продление прокси-сервера и каналов связи.</li>
+            </ul>
+            <p>Гарантия на наши работы — 30 дней после акта. Вызов при аварии — по заявке, без гарантированного срока: <span data-money="5000">5 000 ₽</span> в час, минимум 2 часа. Вернуться на сопровождение можно в любой момент после диагностики за <span data-money="20000">20 000 ₽</span>.</p>
+          </div>
+
+          <fieldset class="pay__opts">
+            <legend>Как платить за работы</legend>
+            <label><input type="radio" name="pay" id="pay-split" value="split" checked> <span>Оплата по этапам, без переплаты</span></label>
+            <label><input type="radio" name="pay" id="pay-std" value="std"> <span>Половина после сметы, половина по акту</span></label>
+            <label><input type="radio" name="pay" id="pay-pre" value="pre"> <span>Предоплата со скидкой 5%</span></label>
+            <label><input type="radio" name="pay" id="pay-inst" value="inst"> <span>Рассрочка на 6 месяцев</span></label>
+          </fieldset>
+        </div>
+
+        <div class="calc__out" aria-live="polite">
+          <h3>Оплата работ</h3>
+          <ol class="pay__list" id="pay-list"></ol>
+          <p class="pay__note" id="pay-note"></p>
+
+          <h3>Расходы за первый год</h3>
+          <ul class="sum" id="year-list"></ul>
+          <p class="sum__total"><span>Итого за первый год</span><b id="year-total">—</b></p>
+          <p class="sum__month"><span>Дальше каждый месяц</span><b id="month-total">—</b></p>
+          <p class="pay__note">Оборудование — ориентир по ценам продавцов, точная сумма — в списке после аудита. Его вы оплачиваете продавцу напрямую. Каналы связи и прокси-сервер оплачиваются провайдерам по их тарифам и в расчёт не входят.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="support" id="soprovozhdenie" aria-labelledby="support-h">
+    <div class="wrap">
+      <h2 id="support-h">Сопровождение — по желанию</h2>
+      <p class="sub">От сопровождения можно отказаться при подписании договора или позже, предупредив за 30 дней. Система продолжит работать в любом случае. Меняется только то, кто следит за ней.</p>
+      <div class="cmp-wrap">
+        <table class="cmp">
+          <thead>
+            <tr><th scope="col"><span class="sr">Что</span></th><th scope="col">С сопровождением</th><th scope="col">Без сопровождения</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Работа системы</th><td>Продолжает работать</td><td>Продолжает работать</td></tr>
+            <tr><th scope="row">Гарантия на наши работы</th><td>30 дней после акта, затем в рамках сопровождения</td><td>30 дней после акта: бесплатно исправляем ошибки наших настроек</td></tr>
+            <tr><th scope="row">Наблюдение за серверами</th><td>Круглосуточный мониторинг, сбой видим раньше вас</td><td>Сбой замечаете вы сами</td></tr>
+            <tr><th scope="row">Ночная копия в другом городе</th><td>Проверяем каждый день, раз в квартал — тест восстановления с отчётом</td><td>Настроена при сдаче. Проверять её и оплачивать хранилище — ваша задача</td></tr>
+            <tr><th scope="row">Обновления и пароли</th><td>Устанавливаем обновления, ведём журнал доступов</td><td>По регламенту, который мы передаём при сдаче, силами вашего сотрудника</td></tr>
+            <tr><th scope="row">Прокси-сервер и каналы связи</th><td>Администрируем, следим за оплатой и продлением</td><td>Продлеваете и администрируете сами</td></tr>
+            <tr><th scope="row">Авария</th><td>Выезд инженера в течение 4 часов по договору</td><td>По заявке, без гарантированного срока: <span data-money="5000">5 000 ₽</span> в час, минимум 2 часа</td></tr>
+            <tr><th scope="row">Стоимость</th><td><span data-money="29000">29 000</span> / <span data-money="45000">45 000</span> / <span data-money="75000">75 000 ₽</span> в месяц по пакетам</td><td>0 ₽ в месяц, вызовы оплачиваются отдельно</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="support__actions">
+        <button type="button" class="btn btn--ghost" data-support="off">Отказаться от сопровождения</button>
+        <button type="button" class="btn btn--ghost" data-support="on">Оставить сопровождение</button>
+        <p class="support__state" id="support-state" aria-live="polite">Сейчас в расчёте: с сопровождением.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" aria-labelledby="trust-h">
+    <div class="wrap trust__in">
+      <div>
+        <h2 id="trust-h">Что записано в договоре</h2>
+        <ul class="checks">
+          <li>Выезд специалиста — в течение 24 часов после подписания.</li>
+          <li>Полная сдача — не позднее 14 календарных дней с даты оплаты первого этапа, предоставления доступов и закупки оборудования.</li>
+          <li>За каждый день просрочки по нашей вине — скидка 2% от стоимости работ, но не более 20%.</li>
+          <li>Цена работ фиксируется в смете после аудита и не меняется.</li>
+          <li>Соглашение о конфиденциальности и поручение на обработку персональных данных — до начала работ.</li>
+          <li>Все пароли и доступы передаются вам по акту.</li>
+          <li>Гарантия на работы — 30 дней после подписания акта.</li>
+          <li>Ответственность сторон ограничена ценой договора; восстанавливаются данные, у которых есть копия.</li>
+        </ul>
+      </div>
+      <div class="faq">
+        <h2>Частые вопросы</h2>
+        <details>
+          <summary>Вы вернёте все данные?</summary>
+          <p>Мы восстанавливаем всё, у чего сохранилась копия: резервные копии, выгрузки, компьютеры сотрудников, доступные ресурсы облака. Если данные хранились только на недоступном оборудовании, вернуть их мы не можем. Это мы скажем в заключении по аудиту, до основной оплаты.</p>
+        </details>
+        <details>
+          <summary>Сколько это по сравнению с арендой в облаке?</summary>
+          <p>По открытой отчётности крупнейшего российского облачного провайдера за первое полугодие 2026 года средний клиент платит около 43 тыс. ₽ в месяц. С сопровождением ваши расходы сопоставимы с арендой, без него — заметно ниже. Главное отличие в том, что оборудование ваше и не зависит от одного дата-центра.</p>
+        </details>
+        <details>
+          <summary>Кто покупает оборудование?</summary>
+          <p>Вы покупаете его напрямую у продавца по чеку, мы подбираем конфигурацию и сопровождаем закупку за 10% от его стоимости. Продавцы, как правило, предлагают рассрочку или лизинг.</p>
+        </details>
+        <details>
+          <summary>Насколько безопасно держать сайт в офисе?</summary>
+          <p>Сайт открывается снаружи через прокси-сервер, поэтому IP-адрес офиса не публикуется. Остальные системы доступны сотрудникам только через защищённое подключение. Два провайдера и бесперебойник закрывают отказ канала и кратковременные перебои питания. Работы, для которых нужна лицензия ФСТЭК или ФСБ России, выполняются с привлечением партнёров, имеющих такие лицензии.</p>
+        </details>
+        <details>
+          <summary>А если облако восстановится через неделю?</summary>
+          <p>Тогда облако можно оставить основным, а офис сделать резервом. Вы перестаёте зависеть от одной площадки: при следующей аварии работа переключается на ваш офис.</p>
+        </details>
+        <details>
+          <summary>Можно отказаться от сопровождения?</summary>
+          <p>Да, при подписании договора или позже, предупредив за 30 дней. Система продолжит работать, а наблюдение, проверку копий и обновления по акту возьмёт на себя ваш сотрудник. Гарантия на работы — 30 дней, аварийные вызовы — по почасовому тарифу.</p>
+        </details>
+        <details>
+          <summary>С кем вы работаете?</summary>
+          <p>С юридическими лицами и индивидуальными предпринимателями. Договоры подписываем электронно или на бумаге, счета выставляем от компании.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="lead-sec" id="zayavka" aria-labelledby="zayavka-h">
+    <div class="wrap lead-sec__in">
+      <div class="lead-sec__text">
+        <h2 id="zayavka-h">Вызвать специалиста на аудит</h2>
+        <p>Оставьте телефон — перезвоним, чтобы согласовать время выезда. Или позвоните сами:</p>
+        <p class="contact"><a href="tel:+70000000000" data-fill="phone">+7 (000) 000-00-00</a><br><a href="mailto:info@example.ru" data-fill="email">info@example.ru</a></p>
+        <p class="deadline deadline--dark"><span class="deadline__mark" aria-hidden="true"></span>Число проектов, которые мы ведём одновременно, ограничено. Проекты распределяются в порядке подписания договоров.</p>
+      </div>
+      <form class="form" id="form" novalidate>
+        <div class="field">
+          <label for="f-name">Имя</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Телефон</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7" required aria-describedby="f-phone-err">
+          <p class="field__err" id="f-phone-err" hidden>Укажите телефон, например +7 900 123-45-67.</p>
+        </div>
+        <div class="field">
+          <label for="f-company">Компания</label>
+          <input id="f-company" name="company" type="text" autocomplete="organization">
+        </div>
+        <fieldset class="field field--chips">
+          <legend>Что сейчас не работает</legend>
+          <label><input type="checkbox" name="down" value="Сайт" id="f-d1"><span>Сайт</span></label>
+          <label><input type="checkbox" name="down" value="1С" id="f-d2"><span>1С</span></label>
+          <label><input type="checkbox" name="down" value="CRM" id="f-d3"><span>CRM</span></label>
+          <label><input type="checkbox" name="down" value="Почта" id="f-d4"><span>Почта</span></label>
+          <label><input type="checkbox" name="down" value="Файлы" id="f-d5"><span>Файлы</span></label>
+          <label><input type="checkbox" name="down" value="Хотим резерв заранее" id="f-d6"><span>Всё работает, хотим резерв</span></label>
+        </fieldset>
+        <p class="form__choice" id="form-choice" aria-live="polite"></p>
+        <div class="consent">
+          <input type="checkbox" id="f-consent" name="consent" required aria-describedby="f-consent-err">
+          <label for="f-consent">Даю <button type="button" class="linkish" data-open="dlg-consent">согласие на обработку персональных данных</button> для обратной связи по заявке. С <button type="button" class="linkish" data-open="dlg-policy">политикой обработки персональных данных</button> ознакомлен.</label>
+        </div>
+        <p class="field__err" id="f-consent-err" hidden>Без согласия мы не можем принять заявку: отметьте галочку или позвоните нам.</p>
+        <button class="btn btn--signal btn--wide" type="submit" id="f-submit">Вызвать специалиста</button>
+        <div class="form__result" id="form-result" role="status" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <p class="foot__brand"><b data-fill="legal-name">ООО «Дублёр»</b></p>
+      <p data-fill="requisites">ОГРН 0000000000000, ИНН 0000000000, КПП 000000000</p>
+      <p data-fill="address">Юридический адрес: [индекс, город, улица, дом]</p>
+      <p class="foot__links">
+        <button type="button" class="linkish" data-open="dlg-requisites">Реквизиты</button>
+        <button type="button" class="linkish" data-open="dlg-policy">Политика обработки персональных данных</button>
+        <button type="button" class="linkish" data-open="dlg-consent">Согласие на обработку персональных данных</button>
+      </p>
+    </div>
+    <div class="foot__legal">
+      <p>Информация на сайте, включая цены и сроки, не является публичной офертой (ст. 437 ГК РФ). Условия фиксируются в договоре. Услуги оказываются юридическим лицам и индивидуальным предпринимателям.</p>
+      <p>Работы, требующие лицензий ФСТЭК России или ФСБ России, выполняются с привлечением партнёров, имеющих соответствующие лицензии. Сайт не использует файлы cookie и сервисы веб-аналитики.</p>
+      <p>© <span id="year">2026</span> <span data-fill="legal-name">ООО «Дублёр»</span></p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="dlg" id="dlg-consent" aria-labelledby="dlg-consent-h">
+  <div class="dlg__body">
+    <h2 id="dlg-consent-h">Согласие на обработку персональных данных</h2>
+    <p>Заполняя форму на сайте и отмечая согласие, я свободно, своей волей и в своём интересе даю согласие оператору — <span data-fill="legal-full">Обществу с ограниченной ответственностью «Дублёр»</span> (<span data-fill="requisites">ОГРН 0000000000000, ИНН 0000000000, КПП 000000000</span>; <span data-fill="address">юридический адрес: [индекс, город, улица, дом]</span>) — на обработку моих персональных данных на условиях ниже.</p>
+    <p><b>Перечень данных:</b> имя, номер телефона, название компании, сведения о работе IT-систем, указанные в форме.</p>
+    <p><b>Цель:</b> связаться со мной по заявке, согласовать выезд специалиста и подготовить коммерческое предложение и договор.</p>
+    <p><b>Действия:</b> сбор, запись, систематизация, накопление, хранение, уточнение, извлечение, использование, удаление, уничтожение — с использованием средств автоматизации и без них. Передача третьим лицам не осуществляется.</p>
+    <p><b>Срок:</b> согласие действует 1 год с даты отправки формы или до его отзыва.</p>
+    <p><b>Отзыв:</b> согласие можно отозвать письмом на <span data-fill="email-text">info@example.ru</span> или по адресу оператора. Данные будут уничтожены в течение 10 рабочих дней с даты получения отзыва.</p>
+    <p class="dlg__meta">Редакция от <span data-fill="consent-version">13.10.2026</span>.</p>
+    <button type="button" class="btn btn--ghost btn--sm" data-close>Закрыть</button>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-policy" aria-labelledby="dlg-policy-h">
+  <div class="dlg__body">
+    <h2 id="dlg-policy-h">Политика обработки персональных данных</h2>
+    <p class="dlg__meta">Редакция от <span data-fill="consent-version">13.10.2026</span>. Документ принят в соответствии со ст. 18.1 Федерального закона № 152-ФЗ «О персональных данных».</p>
+    <h3>1. Оператор</h3>
+    <p><span data-fill="legal-full">Общество с ограниченной ответственностью «Дублёр»</span>, <span data-fill="requisites">ОГРН 0000000000000, ИНН 0000000000, КПП 000000000</span>, <span data-fill="address">юридический адрес: [индекс, город, улица, дом]</span>. Контакт для обращений: <span data-fill="email-text">info@example.ru</span>.</p>
+    <h3>2. Какие данные и зачем</h3>
+    <p>Имя, телефон, название компании и описание ситуации из формы заявки — чтобы ответить на заявку, согласовать выезд и подготовить договор. Правовое основание — согласие субъекта (п. 1 ч. 1 ст. 6 152-ФЗ), а при заключении договора — его исполнение (п. 5 ч. 1 ст. 6 152-ФЗ). Рекламные рассылки без отдельного согласия не отправляются.</p>
+    <h3>3. Cookie и аналитика</h3>
+    <p>Сайт не использует файлы cookie, счётчики посещаемости и сервисы веб-аналитики.</p>
+    <h3>4. Где и как храним</h3>
+    <p>Данные хранятся в базах, расположенных на территории Российской Федерации (ч. 5 ст. 18 152-ФЗ). Трансграничная передача не осуществляется. Доступ имеют только сотрудники, работающие с заявками; учётные записи защищены паролями, действия с данными журналируются.</p>
+    <h3>5. Сроки</h3>
+    <p>До достижения цели обработки, но не дольше 1 года с момента получения заявки, если договор не заключён; при заключении договора — в сроки, установленные законодательством для хранения договорных и бухгалтерских документов. При отзыве согласия данные уничтожаются в течение 10 рабочих дней.</p>
+    <h3>6. Ваши права</h3>
+    <p>Получить сведения об обработке ваших данных, потребовать их уточнения, блокирования или уничтожения, отозвать согласие, обжаловать действия оператора в Роскомнадзоре или в суде. Запрос направляется на <span data-fill="email-text">info@example.ru</span>; ответ — в течение 10 рабочих дней.</p>
+    <h3>7. Данные клиентов при выполнении работ</h3>
+    <p>Если в IT-системах клиента есть персональные данные, мы обрабатываем их только по поручению клиента (ч. 3 ст. 6 152-ФЗ), в объёме, необходимом для выполнения работ, с соблюдением конфиденциальности.</p>
+    <button type="button" class="btn btn--ghost btn--sm" data-close>Закрыть</button>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-requisites" aria-labelledby="dlg-req-h">
+  <div class="dlg__body">
+    <h2 id="dlg-req-h">Реквизиты</h2>
+    <dl class="req" id="req-list"></dl>
+    <button type="button" class="btn btn--ghost btn--sm" data-close>Закрыть</button>
+  </div>
+</dialog>
+
+<div class="dock" aria-label="Быстрая связь">
+  <a class="btn btn--ghost" href="tel:+70000000000" data-fill-href="tel">Позвонить</a>
+  <a class="btn btn--signal" href="#zayavka">Вызвать специалиста</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
